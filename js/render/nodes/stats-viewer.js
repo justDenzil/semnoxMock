@@ -144,7 +144,7 @@ export class StatsViewer extends Node {
       fpsIndices.push(idx, idx+1, idx+2,
                        idx, idx+3, idx+1);
     }
-
+/*
     // Panel Background
     addBGSquare(-0.5, -0.5, 0.5, 0.5, 0.0, 0.0, 0.0, 0.125);
 
@@ -156,7 +156,7 @@ export class StatsViewer extends Node {
 
     // 60 FPS line
     addBGSquare(-0.45, fpsToY(60), 0.45, fpsToY(62), 0.015, 0.2, 0.0, 0.75);
-
+*/
     this._fpsVertexBuffer = renderer.createRenderBuffer(gl.ARRAY_BUFFER, new Float32Array(fpsVerts), gl.DYNAMIC_DRAW);
     let fpsIndexBuffer = renderer.createRenderBuffer(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(fpsIndices));
 
