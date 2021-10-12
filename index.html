@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="./css/handoff.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" type="text/css" href="./css/variables.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@100;300;400;500;700;900&display=swap&family=Zilla+Slab:wght@100;300;400;500;700;900&display=swap&family=Zilla+Slab:wght@100;300;400;500;700;900&display=swap');
     </style>
@@ -36,8 +40,18 @@
         </div>
         <div class="lower-section">
           <div class="carousel-container">
-            <a href='./augmentedPage.html'>
-            <button class="button">Augmented Reality</button>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href='./augmentedPage.html'>
+                  <button class="button">Augmented Reality</button></div>
+                <div class="swiper-slide"><a href='./augmentedPage.html'>
+                  <button class="button">360° Photo</button></div>
+                <div class="swiper-slide"><a href='./augmentedPage.html'>
+                  <button class="button">Marker AR</button></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
           </a>
           </div>
           <div class="footer-section">
@@ -45,5 +59,16 @@
           </div>
         </div>
       </section>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
   </body>
 </html>
