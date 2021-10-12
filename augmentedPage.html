@@ -24,6 +24,26 @@
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 </head>
 <body>
+  
+  <div id="card">
+    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer src="./assets/dbz.gltf"
+                  ios-src="./assets/dragonBallZ.usdz"
+                  alt="A 3D model of an astronaut"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate ar magic-leap>
+    </model-viewer>
+    <section class="attribution">
+      <span>
+        <h1>Dragon Ball Z</h1>
+      </span>
+    </section>
+    
+  </div>
+
+
   <div id="card">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
     <model-viewer src="./assets/kirbyArcade.gltf"
@@ -41,6 +61,8 @@
     </section>
     
   </div>
+
+  
   
   
   <!-- 💁 Include both scripts below to support all browsers! -->
