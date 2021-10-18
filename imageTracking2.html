@@ -33,17 +33,12 @@
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
-        <a-assets>
-            <a-asset-item id="tree" src="./assets/chest.gltf"></a-asset-item>
-        </a-assets>
-          <!-- use your gltf model -->
-          <a-entity gltf-model="chest"></a-entity>
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
         <a-nft
             type='nft' url='https://rawcdn.githack.com/justDenzil/AR_js_ImageMaker/3033ad28ead2cf2d482c88c8e24aceebe7a06824/logologo'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
-                gltf-model='./trex/scene.gltf'
+                gltf-model='./assets/chest.gltf'
                 scale="5 5 5"
                 position="150 300 -100"
                 >
